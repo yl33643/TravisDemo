@@ -1,0 +1,519 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		FFED11E81CEDA10A0055CC83 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = FFED11E71CEDA10A0055CC83 /* main.m */; };
+		FFED11EB1CEDA10A0055CC83 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = FFED11EA1CEDA10A0055CC83 /* AppDelegate.m */; };
+		FFED11EE1CEDA10A0055CC83 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = FFED11ED1CEDA10A0055CC83 /* ViewController.m */; };
+		FFED11F11CEDA10A0055CC83 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FFED11EF1CEDA10A0055CC83 /* Main.storyboard */; };
+		FFED11F31CEDA10A0055CC83 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = FFED11F21CEDA10A0055CC83 /* Assets.xcassets */; };
+		FFED11F61CEDA10A0055CC83 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FFED11F41CEDA10A0055CC83 /* LaunchScreen.storyboard */; };
+		FFED12011CEDA10A0055CC83 /* TravisDemoTests.m in Sources */ = {isa = PBXBuildFile; fileRef = FFED12001CEDA10A0055CC83 /* TravisDemoTests.m */; };
+		FFED120C1CEDA10A0055CC83 /* TravisDemoUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = FFED120B1CEDA10A0055CC83 /* TravisDemoUITests.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		FFED11FD1CEDA10A0055CC83 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = FFED11DB1CEDA10A0055CC83 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = FFED11E21CEDA10A0055CC83;
+			remoteInfo = TravisDemo;
+		};
+		FFED12081CEDA10A0055CC83 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = FFED11DB1CEDA10A0055CC83 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = FFED11E21CEDA10A0055CC83;
+			remoteInfo = TravisDemo;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		FFED11E31CEDA10A0055CC83 /* TravisDemo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TravisDemo.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		FFED11E71CEDA10A0055CC83 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		FFED11E91CEDA10A0055CC83 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		FFED11EA1CEDA10A0055CC83 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		FFED11EC1CEDA10A0055CC83 /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
+		FFED11ED1CEDA10A0055CC83 /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
+		FFED11F01CEDA10A0055CC83 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		FFED11F21CEDA10A0055CC83 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		FFED11F51CEDA10A0055CC83 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		FFED11F71CEDA10A0055CC83 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		FFED11FC1CEDA10A0055CC83 /* TravisDemoTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = TravisDemoTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		FFED12001CEDA10A0055CC83 /* TravisDemoTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TravisDemoTests.m; sourceTree = "<group>"; };
+		FFED12021CEDA10A0055CC83 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		FFED12071CEDA10A0055CC83 /* TravisDemoUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = TravisDemoUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		FFED120B1CEDA10A0055CC83 /* TravisDemoUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TravisDemoUITests.m; sourceTree = "<group>"; };
+		FFED120D1CEDA10A0055CC83 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		FFED11E01CEDA10A0055CC83 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		FFED11F91CEDA10A0055CC83 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		FFED12041CEDA10A0055CC83 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		FFED11DA1CEDA10A0055CC83 = {
+			isa = PBXGroup;
+			children = (
+				FFED11E51CEDA10A0055CC83 /* TravisDemo */,
+				FFED11FF1CEDA10A0055CC83 /* TravisDemoTests */,
+				FFED120A1CEDA10A0055CC83 /* TravisDemoUITests */,
+				FFED11E41CEDA10A0055CC83 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		FFED11E41CEDA10A0055CC83 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				FFED11E31CEDA10A0055CC83 /* TravisDemo.app */,
+				FFED11FC1CEDA10A0055CC83 /* TravisDemoTests.xctest */,
+				FFED12071CEDA10A0055CC83 /* TravisDemoUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		FFED11E51CEDA10A0055CC83 /* TravisDemo */ = {
+			isa = PBXGroup;
+			children = (
+				FFED11E91CEDA10A0055CC83 /* AppDelegate.h */,
+				FFED11EA1CEDA10A0055CC83 /* AppDelegate.m */,
+				FFED11EC1CEDA10A0055CC83 /* ViewController.h */,
+				FFED11ED1CEDA10A0055CC83 /* ViewController.m */,
+				FFED11EF1CEDA10A0055CC83 /* Main.storyboard */,
+				FFED11F21CEDA10A0055CC83 /* Assets.xcassets */,
+				FFED11F41CEDA10A0055CC83 /* LaunchScreen.storyboard */,
+				FFED11F71CEDA10A0055CC83 /* Info.plist */,
+				FFED11E61CEDA10A0055CC83 /* Supporting Files */,
+			);
+			path = TravisDemo;
+			sourceTree = "<group>";
+		};
+		FFED11E61CEDA10A0055CC83 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				FFED11E71CEDA10A0055CC83 /* main.m */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		FFED11FF1CEDA10A0055CC83 /* TravisDemoTests */ = {
+			isa = PBXGroup;
+			children = (
+				FFED12001CEDA10A0055CC83 /* TravisDemoTests.m */,
+				FFED12021CEDA10A0055CC83 /* Info.plist */,
+			);
+			path = TravisDemoTests;
+			sourceTree = "<group>";
+		};
+		FFED120A1CEDA10A0055CC83 /* TravisDemoUITests */ = {
+			isa = PBXGroup;
+			children = (
+				FFED120B1CEDA10A0055CC83 /* TravisDemoUITests.m */,
+				FFED120D1CEDA10A0055CC83 /* Info.plist */,
+			);
+			path = TravisDemoUITests;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		FFED11E21CEDA10A0055CC83 /* TravisDemo */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = FFED12101CEDA10A0055CC83 /* Build configuration list for PBXNativeTarget "TravisDemo" */;
+			buildPhases = (
+				FFED11DF1CEDA10A0055CC83 /* Sources */,
+				FFED11E01CEDA10A0055CC83 /* Frameworks */,
+				FFED11E11CEDA10A0055CC83 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = TravisDemo;
+			productName = TravisDemo;
+			productReference = FFED11E31CEDA10A0055CC83 /* TravisDemo.app */;
+			productType = "com.apple.product-type.application";
+		};
+		FFED11FB1CEDA10A0055CC83 /* TravisDemoTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = FFED12131CEDA10A0055CC83 /* Build configuration list for PBXNativeTarget "TravisDemoTests" */;
+			buildPhases = (
+				FFED11F81CEDA10A0055CC83 /* Sources */,
+				FFED11F91CEDA10A0055CC83 /* Frameworks */,
+				FFED11FA1CEDA10A0055CC83 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				FFED11FE1CEDA10A0055CC83 /* PBXTargetDependency */,
+			);
+			name = TravisDemoTests;
+			productName = TravisDemoTests;
+			productReference = FFED11FC1CEDA10A0055CC83 /* TravisDemoTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		FFED12061CEDA10A0055CC83 /* TravisDemoUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = FFED12161CEDA10A0055CC83 /* Build configuration list for PBXNativeTarget "TravisDemoUITests" */;
+			buildPhases = (
+				FFED12031CEDA10A0055CC83 /* Sources */,
+				FFED12041CEDA10A0055CC83 /* Frameworks */,
+				FFED12051CEDA10A0055CC83 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				FFED12091CEDA10A0055CC83 /* PBXTargetDependency */,
+			);
+			name = TravisDemoUITests;
+			productName = TravisDemoUITests;
+			productReference = FFED12071CEDA10A0055CC83 /* TravisDemoUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		FFED11DB1CEDA10A0055CC83 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0730;
+				ORGANIZATIONNAME = com.aihan;
+				TargetAttributes = {
+					FFED11E21CEDA10A0055CC83 = {
+						CreatedOnToolsVersion = 7.3;
+					};
+					FFED11FB1CEDA10A0055CC83 = {
+						CreatedOnToolsVersion = 7.3;
+						TestTargetID = FFED11E21CEDA10A0055CC83;
+					};
+					FFED12061CEDA10A0055CC83 = {
+						CreatedOnToolsVersion = 7.3;
+						TestTargetID = FFED11E21CEDA10A0055CC83;
+					};
+				};
+			};
+			buildConfigurationList = FFED11DE1CEDA10A0055CC83 /* Build configuration list for PBXProject "TravisDemo" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = FFED11DA1CEDA10A0055CC83;
+			productRefGroup = FFED11E41CEDA10A0055CC83 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				FFED11E21CEDA10A0055CC83 /* TravisDemo */,
+				FFED11FB1CEDA10A0055CC83 /* TravisDemoTests */,
+				FFED12061CEDA10A0055CC83 /* TravisDemoUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		FFED11E11CEDA10A0055CC83 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				FFED11F61CEDA10A0055CC83 /* LaunchScreen.storyboard in Resources */,
+				FFED11F31CEDA10A0055CC83 /* Assets.xcassets in Resources */,
+				FFED11F11CEDA10A0055CC83 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		FFED11FA1CEDA10A0055CC83 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		FFED12051CEDA10A0055CC83 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		FFED11DF1CEDA10A0055CC83 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				FFED11EE1CEDA10A0055CC83 /* ViewController.m in Sources */,
+				FFED11EB1CEDA10A0055CC83 /* AppDelegate.m in Sources */,
+				FFED11E81CEDA10A0055CC83 /* main.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		FFED11F81CEDA10A0055CC83 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				FFED12011CEDA10A0055CC83 /* TravisDemoTests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		FFED12031CEDA10A0055CC83 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				FFED120C1CEDA10A0055CC83 /* TravisDemoUITests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		FFED11FE1CEDA10A0055CC83 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = FFED11E21CEDA10A0055CC83 /* TravisDemo */;
+			targetProxy = FFED11FD1CEDA10A0055CC83 /* PBXContainerItemProxy */;
+		};
+		FFED12091CEDA10A0055CC83 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = FFED11E21CEDA10A0055CC83 /* TravisDemo */;
+			targetProxy = FFED12081CEDA10A0055CC83 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		FFED11EF1CEDA10A0055CC83 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				FFED11F01CEDA10A0055CC83 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		FFED11F41CEDA10A0055CC83 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				FFED11F51CEDA10A0055CC83 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		FFED120E1CEDA10A0055CC83 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		FFED120F1CEDA10A0055CC83 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		FFED12111CEDA10A0055CC83 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = TravisDemo/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = aihan.TravisDemo;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		FFED12121CEDA10A0055CC83 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = TravisDemo/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = aihan.TravisDemo;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+		FFED12141CEDA10A0055CC83 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				INFOPLIST_FILE = TravisDemoTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = aihan.TravisDemoTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/TravisDemo.app/TravisDemo";
+			};
+			name = Debug;
+		};
+		FFED12151CEDA10A0055CC83 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				INFOPLIST_FILE = TravisDemoTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = aihan.TravisDemoTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/TravisDemo.app/TravisDemo";
+			};
+			name = Release;
+		};
+		FFED12171CEDA10A0055CC83 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				INFOPLIST_FILE = TravisDemoUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = aihan.TravisDemoUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_TARGET_NAME = TravisDemo;
+			};
+			name = Debug;
+		};
+		FFED12181CEDA10A0055CC83 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				INFOPLIST_FILE = TravisDemoUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = aihan.TravisDemoUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_TARGET_NAME = TravisDemo;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		FFED11DE1CEDA10A0055CC83 /* Build configuration list for PBXProject "TravisDemo" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				FFED120E1CEDA10A0055CC83 /* Debug */,
+				FFED120F1CEDA10A0055CC83 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		FFED12101CEDA10A0055CC83 /* Build configuration list for PBXNativeTarget "TravisDemo" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				FFED12111CEDA10A0055CC83 /* Debug */,
+				FFED12121CEDA10A0055CC83 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		FFED12131CEDA10A0055CC83 /* Build configuration list for PBXNativeTarget "TravisDemoTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				FFED12141CEDA10A0055CC83 /* Debug */,
+				FFED12151CEDA10A0055CC83 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		FFED12161CEDA10A0055CC83 /* Build configuration list for PBXNativeTarget "TravisDemoUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				FFED12171CEDA10A0055CC83 /* Debug */,
+				FFED12181CEDA10A0055CC83 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = FFED11DB1CEDA10A0055CC83 /* Project object */;
+}
