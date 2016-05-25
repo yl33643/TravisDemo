@@ -414,6 +414,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = TravisDemo/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = aihan.TravisDemo;
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -425,6 +426,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = TravisDemo/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = aihan.TravisDemo;
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -496,6 +498,7 @@
 				FFED12121CEDA10A0055CC83 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		FFED12131CEDA10A0055CC83 /* Build configuration list for PBXNativeTarget "TravisDemoTests" */ = {
 			isa = XCConfigurationList;
@@ -504,6 +507,7 @@
 				FFED12151CEDA10A0055CC83 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		FFED12161CEDA10A0055CC83 /* Build configuration list for PBXNativeTarget "TravisDemoUITests" */ = {
 			isa = XCConfigurationList;
@@ -512,6 +516,7 @@
 				FFED12181CEDA10A0055CC83 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
