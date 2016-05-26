@@ -8,6 +8,7 @@ before_script:
   - openssl aes-256-cbc -k "$ENCRYPTION_SECRET" -in scripts/certs/dist.p12.enc -d -a -out scripts/certs/dist.p12
   - "./scripts/add-key.sh"
 script:
+  - xcodebuild -project 'TravisDemo.xcodeproj' -scheme 'TravisDemoTests' -configuration Debug -sdk iphonesimulator test
   - xctool -project TravisDemo.xcodeproj -scheme TravisDemo -sdk iphoneos -configuration Release ONLY_ACTIVE_ARCH=NO OBJROOT=$PWD/build SYMROOT=$PWD/build 'CODE_SIGN_RESOURCE_RULES_PATH=$(SDKROOT)/ResourceRules.plist'
 after_script:
   - "./scripts/remove-key.sh"
