@@ -1,23 +1,29 @@
 language: objective-c
 osx_image: xcode7.3
 before_install:
-  - gem install fir-cli --no-ri --no-rdoc
+- gem install fir-cli --no-ri --no-rdoc
 before_script:
-  - openssl aes-256-cbc -k "$ENCRYPTION_SECRET" -in scripts/profile/TravisDemo_Ad_Hoc.mobileprovision.enc -d -a -out scripts/profile/TravisDemo_Ad_Hoc.mobileprovision
-  - openssl aes-256-cbc -k "$ENCRYPTION_SECRET" -in scripts/certs/dist.cer.enc -d -a -out scripts/certs/dist.cer
-  - openssl aes-256-cbc -k "$ENCRYPTION_SECRET" -in scripts/certs/dist.p12.enc -d -a -out scripts/certs/dist.p12
-  - ./scripts/add-key.sh
+- openssl aes-256-cbc -k "$ENCRYPTION_SECRET" -in scripts/profile/TravisDemo_Ad_Hoc.mobileprovision.enc
+  -d -a -out scripts/profile/TravisDemo_Ad_Hoc.mobileprovision
+- openssl aes-256-cbc -k "$ENCRYPTION_SECRET" -in scripts/certs/dist.cer.enc -d -a
+  -out scripts/certs/dist.cer
+- openssl aes-256-cbc -k "$ENCRYPTION_SECRET" -in scripts/certs/dist.p12.enc -d -a
+  -out scripts/certs/dist.p12
+- "./scripts/add-key.sh"
 script:
-  - xctool -project TravisDemo.xcodeproj -scheme TravisDemo -sdk iphoneos -configuration Release ONLY_ACTIVE_ARCH=NO OBJROOT=$PWD/build SYMROOT=$PWD/build 
-  - xcodebuild -project 'TravisDemo.xcodeproj' -scheme 'TravisDemoTests' -configuration Debug -sdk iphonesimulator test
+- xctool -project TravisDemo.xcodeproj -scheme TravisDemo -sdk iphoneos -configuration
+  Release ONLY_ACTIVE_ARCH=NO OBJROOT=$PWD/build SYMROOT=$PWD/build
+- xcodebuild -project 'TravisDemo.xcodeproj' -scheme 'TravisDemoTests' -configuration
+  Debug -sdk iphonesimulator test
 after_script:
-  - ./scripts/remove-key.sh
+- "./scripts/remove-key.sh"
 after_success:
-  - ./scripts/sign-and-upload.sh
+- "./scripts/sign-and-upload.sh"
 env:
   global:
-    - APP_NAME="TravisDemo"
-    - 'DEVELOPER_NAME="iPhone Distribution: Nanjing CCT Communication Equipment Co., Ltd."'
-    - PROFILE_NAME="TravisDemo_Ad_Hoc"
-    - secure: eaZmmlIRFccAOCQvLWOtj6E1fYfviitCmb1zgLuv7PsYtYqVYJpyj/cBBINEMem0lJFLGiWXBKZ8oof+boljvTmhkd0A/6lpwNvDElxRsDlX5diWByLgSzQP3MgStOxiItfUY6xlW7GjgC5gQ98vUP6we47O7oVGLNLmOpQjXuea53dbubrOn6KYo92Z6uEAr+nw7zPKBd264aVWnd8KS1jtElAfOBlAsBCRI/5XW0yVUbQPkHqeVOw1aynLvQUVo+iHjH6VF+fGefUqcW98OXfoGmCUphR+/r4VtmpmktOYqR+HcmHQ0TAayC8DQznEyDo8L5Rgz0gwi/eJikP75hBtR2vkJ8nr49KMk8UhK9LoG6YtNrXVZ9wod06E6LWmu0zEBD3sdSDgw/Mo16GjsydTcvn2GVlIWmQT+iBaIvdOdvYuVzYbmWQoVhLj6Fvn5rm0Ur9Bymzz0YJxiBIVYKfnUJcs85Yeh8HAqz/OFcEnXS+ptYPdhEd7ox25qL3pkb3H+IjpPym4eT8aMXBd4sWt3hmk4Rz2AAH2gooCwAL0vfjAjBx669Q3lKrQ+b0JhpUne9jo4GJkCzVWxllYLfN72tTYva9RC+HH6U2x2gN59iLLO964GPYRUmf96ihoOsRvZ3Ek/Ad1jcpYOmHFmjimaZfT71DWwR8AX9NnMAI=
-    - secure: AAqO7hgpPuQP9aa2/4NG1/N0mGwTsPnHBJWZbb1558fIEYglSBuIbEHE9naeGSJREG0swXMKp5pz75EIjEdl1YdqDecE0Xgm+9MubfutJA4ItLethgfzZZG4PrCiQdxWuUARr8AbYaJFLHi6oX3Gl/48yCru1X+Ilx7Vd7anV+Z3fobo6+iX/t0ah2ufElJr2hf5G90s00L1dc20LEa1G2L1mRk0H8PdnuYr8pmFw1H/Qg5BxqPUgwoEEZzbM2sGzyWyOTyGTvnGflUPlYZRPUiOXWhJCgyUP0pF6zioDwWQ5IJs80kVkLt6lhAy52w5J1mDvT22TuvjSTo4eIOxXzIYRfb/8wNHR7HmTnw7cR3VAznJh93nAjB4sIyHBuE/M+YP79EHmgxNa/wCU3Tkf5K8aa8qNDyWePRixjbc36HFCFb254yM3Yc7hCZfz/cFmQoVWFuTlB2geftGKeEfLt+7hEwx3tmmPNdq316yb0fWW+tquqE37o9bAf1tJBfKEbAAl75p9SdZ5oA3CrU/Ai7lyzdnbCWJGRMuu3E+yqaRqpWqss/KLWaRf9x6AZcay2C3Og7P3gp0pw+A1RdLF0b4q01CU4qafcAbuHZEHc4ZilhLF3rOuYOgqkm3rsWR+R0ZAk50AAKRKshymlxb3kMiIA6SEdXtJuZDmLVvt0Y=
+  - APP_NAME="TravisDemo"
+  - 'DEVELOPER_NAME="iPhone Distribution: Nanjing CCT Communication Equipment Co.,
+    Ltd."'
+  - PROFILE_NAME="TravisDemo_Ad_Hoc"
+  - secure: vxrp+9hRGt31UjYvw8l9AkxAEGQhaKprCq3rWUrLyKbdy74DBfGToeIl+nsN9BWunnqVzXTD1Ss0AotTUOcPQx8Vj+hMXhjrL9xkS4ye18M3uqmDv1BCBm9dO+wWP24GfiuRCz46T5XhSPn5BIM8wAcsK+0pLpFpRDxrNbz/c2Vff7wVM1SPtTrrRtcwTQaeOz+/H+2vekbzpXgDU6HVHKuXRKwmjOLKwR+AXmgE/t4i6UR2flwSNlA48naqhLEMuBJFZpm3PAfivQN1FFJbwD6urpp9pHt4oDkWynHO/Gyn/w0/a1FUH5mfwoUV4DXEhkdErAddIzuMERNdVOonzjPOk57VtuyWTF39XuAN7jRL0dQkWzBTIP98IK99LTXeiIP1wb3xpl8A/iOKVPRZ9iwqpX6D/hkcclC9iluoTKW84LXwflnMwHgeze9MJlek4qhjRmhz5qRgxjE9PTOFrpePgU+E8aM6iYKW4Wj3wCQeIyl7bKK4TxPiqqxTmfwYLO3zgPv6Fth06tsf4aa/FrnsJqosUtIotZMz1oAJCCnbp0b/qV1EwmpeFobd5qoe0wk6ARNoHJzqOl9gzHgs7/tqEDe3raAcoI/ZWZFA6t0Y0eNhdHSTrFuMwlernIpU5fxh+QdtAWkCxA9+a7h2fHHgJt6hQg8qZx/nGsHuBvM=
+  - secure: eIlTyZO2hABUc5sX1iTW7WLf+hUlMJyrNUXiG5dOK3RNHwinu9xrsiiAgEuFALg2JLU2Tz8cImRKtZJ4pyadcxjXdjLOhbw7N7SUWAs4Iz1HvWZ1qEdtoWKXmSmXrVWzGWCVEufpsBvS3FcKKUkCoVnj1LSXUjxOUSBl2fYvIMBOeBYIjisOG8Jjg7PIbmuF/+a3jeZ7hvnSEIv9fsBQEM2hkxkz713wivL8nse2M1h/pN+Zk9BcRaAoQW3HVOhQksRuAKOnXBJFH0rpJIeJ4bDfKVDmc1UMGQg0qGbZJCh/3YjMRdk5wG9IPozF+meJ1arvS1EVJkZxO4IVWPiiViDqJCT+LUj1K924ZuyH1fkf+EGyQ1hO4AtIgrfMA88MTwKhSQvrc4bFHH17tLISxFeGNrjzakzqnipIllj0t0vHy/Nz+CxC3+IIH68vqGGucFb1yCsSbjq5o/BZQtv30crs5f97yVcBFe5k53Xd6Rv9qcu1I/RZyf9kbRoTPMwARIXLBWRVTOniq2l6DYd3PDbEVnCWiaRmfuTPUzcfeuCeS6FniOw/oEpLMwJCsctuqo/MNpSZrXBv7v3W9hwhFbyYyQialkU2yEXT0aDXM9a8Iz9HES9jojfUH9pXYwgkMl7A+mBSZpg46gtO59IVlcE9ex6JLDSW9+Ae04iPrmc=
