@@ -13,8 +13,6 @@ before_script:
 script:
 - xctool -project TravisDemo.xcodeproj -scheme TravisDemo -sdk iphoneos -configuration
   Release ONLY_ACTIVE_ARCH=NO OBJROOT=$PWD/build SYMROOT=$PWD/build
-- xcodebuild -project 'TravisDemo.xcodeproj' -scheme 'TravisDemoTests' -configuration
-  Debug -sdk iphonesimulator test
 after_script:
 - "./scripts/remove-key.sh"
 after_success:
