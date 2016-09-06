@@ -19,4 +19,4 @@ xcrun -log -sdk iphoneos PackageApplication "$OUTPUTDIR/$APP_NAME.app" -o "$OUTP
 echo "***************************"
 echo "*        Publish          *"
 echo "***************************"
-fir p $OUTPUTDIR/$APP_NAME.ipa -T 0f494e1aa02928ad8fe7ce60c3bd96f0
+fir p $OUTPUTDIR/$APP_NAME.ipa -T 84a4384316e66909d01447c671844902
